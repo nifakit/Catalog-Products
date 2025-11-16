@@ -4,8 +4,8 @@ import Modal from "./components/Modal";
 function Products() {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
-  const [isModalOpen, setIsModalOpen] = useState(false); // состояние модалки
-  const [selectedProduct, setSelectedProduct] = useState(null); // выбранный продукт
+  const [isModalOpen, setIsModalOpen] = useState(false); 
+  const [selectedProduct, setSelectedProduct] = useState(null); 
 
   useEffect(() => {
     fetch('https://fakestoreapi.com/products')
